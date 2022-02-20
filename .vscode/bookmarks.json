@@ -4,9 +4,24 @@
 			"path": "Marlin/Configuration.h",
 			"bookmarks": [
 				{
+					"line": 780,
+					"column": 18,
+					"label": "Define endstop connector"
+				},
+				{
 					"line": 867,
 					"column": 2,
 					"label": "Motor driver"
+				},
+				{
+					"line": 1340,
+					"column": 3,
+					"label": "Invert the stepper direction."
+				},
+				{
+					"line": 1377,
+					"column": 3,
+					"label": "Direction of endstops when homing"
 				},
 				{
 					"line": 1571,
@@ -34,22 +49,22 @@
 			"path": "Marlin/Configuration_adv.h",
 			"bookmarks": [
 				{
-					"line": 1338,
+					"line": 1339,
 					"column": 9,
 					"label": "Screen show layer info"
 				},
 				{
-					"line": 1342,
+					"line": 1343,
 					"column": 3,
 					"label": "Display (P)rogress, (E)lapsed, and (R)emaining time"
 				},
 				{
-					"line": 1665,
+					"line": 1666,
 					"column": 15,
 					"label": "LCD alternative logo"
 				},
 				{
-					"line": 1920,
+					"line": 1921,
 					"column": 12,
 					"label": "Z offset baby step"
 				}
