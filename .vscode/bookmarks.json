@@ -4,42 +4,47 @@
 			"path": "Marlin/Configuration.h",
 			"bookmarks": [
 				{
-					"line": 780,
+					"line": 605,
+					"column": 17,
+					"label": "PID nozzle"
+				},
+				{
+					"line": 651,
+					"column": 19,
+					"label": "pid bed"
+				},
+				{
+					"line": 790,
 					"column": 18,
 					"label": "Define endstop connector"
 				},
 				{
-					"line": 867,
+					"line": 877,
 					"column": 2,
 					"label": "Motor driver"
 				},
 				{
-					"line": 1340,
+					"line": 1350,
 					"column": 3,
 					"label": "Invert the stepper direction."
 				},
 				{
-					"line": 1377,
-					"column": 3,
-					"label": "Direction of endstops when homing"
-				},
-				{
-					"line": 1571,
+					"line": 1580,
 					"column": 2,
 					"label": "Pre-heat before leveling"
 				},
 				{
-					"line": 1765,
+					"line": 1774,
 					"column": 2,
 					"label": "Homeing speed"
 				},
 				{
-					"line": 2162,
+					"line": 2171,
 					"column": 15,
 					"label": "Encoder reverse dir"
 				},
 				{
-					"line": 2376,
+					"line": 2385,
 					"column": 16,
 					"label": "LCD activate backlight timeout"
 				}
@@ -119,22 +124,22 @@
 					"label": "definition LCD timeout structure"
 				},
 				{
-					"line": 740,
+					"line": 745,
 					"column": 0,
 					"label": "LCD encoder rafraichissement speed"
 				},
 				{
-					"line": 913,
+					"line": 918,
 					"column": 17,
 					"label": "LCD Update loop"
 				},
 				{
-					"line": 1074,
+					"line": 1079,
 					"column": 17,
 					"label": "LCD Trigg WD backlight"
 				},
 				{
-					"line": 1185,
+					"line": 1190,
 					"column": 14,
 					"label": "LCD elapsed time lcb black"
 				}

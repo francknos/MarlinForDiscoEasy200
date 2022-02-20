@@ -602,9 +602,14 @@
     #define DEFAULT_Ki_LIST {   6.40,   6.40 }
     #define DEFAULT_Kd_LIST {  41.25,  41.25 }
   #else
+  /* ORIGIN PID NOZZLE
     #define DEFAULT_Kp  32.48
     #define DEFAULT_Ki   6.40
     #define DEFAULT_Kd  41.25
+    /* END ORIGIN PID NOZZLE */
+    #define DEFAULT_Kp  58.63
+    #define DEFAULT_Ki  11.36
+    #define DEFAULT_Kd  75.65
   #endif
 #endif // PIDTEMP
 
@@ -643,9 +648,14 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
+  /* ORIGIN PID BED
   #define DEFAULT_bedKp 295.00
   #define DEFAULT_bedKi 40.62
   #define DEFAULT_bedKd 583.14
+  /* END ORIGIN PID BED*/
+  #define DEFAULT_bedKp 112.32
+  #define DEFAULT_bedKi 22.11
+  #define DEFAULT_bedKd 380.32
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1376,7 +1386,6 @@
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
-// :[-1,1]
 #define X_HOME_DIR -1
 #define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
