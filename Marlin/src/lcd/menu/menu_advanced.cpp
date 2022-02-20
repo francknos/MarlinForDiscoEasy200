@@ -517,7 +517,7 @@ void menu_backlash();
     void menu_lcd_timeout(){
       START_MENU();
       BACK_ITEM(MSG_ADVANCED_SETTINGS);
-      EDIT_ITEM(uint8, MSG_LCD_BKL_TIMEOUT, &ui.lcd_backlight_timeout.s, LCD_BKL_TIMEOUT_MIN, LCD_BKL_TIMEOUT_MAX, ui.updateTimeoutFromLCD);
+      EDIT_ITEM(LCD_BKL_TIMEOUT_TYPE, MSG_LCD_BKL_TIMEOUT, &ui.lcd_backlight_timeout.s, LCD_BKL_TIMEOUT_MIN, LCD_BKL_TIMEOUT_MAX, ui.updateTimeoutFromLCD);
       ACTION_ITEM(MSG_STORE_EEPROM, ui.store_settings);
       END_MENU();
     }

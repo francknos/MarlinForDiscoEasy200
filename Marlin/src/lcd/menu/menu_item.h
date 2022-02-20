@@ -166,6 +166,10 @@ DEFINE_MENU_EDIT_ITEM_TYPE(long5_25    ,uint32_t ,ftostr5rj       ,   0.04f );  
   #endif
 #endif
 
+#if HAS_LCD_SCREENSAVER
+  #define LCD_BKL_TIMEOUT_TYPE uint16_4 //use uint16_4 allow to +10 instaed of +1
+#endif
+
 class MenuItem_bool : public MenuEditItemBase {
   public:
     FORCE_INLINE static void draw(const bool sel, const uint8_t row, PGM_P const pstr, const bool onoff) {

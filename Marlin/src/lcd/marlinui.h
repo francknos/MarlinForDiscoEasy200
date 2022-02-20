@@ -195,10 +195,10 @@
 
 #if ENABLED(USE_LCD_SCREENSAVER)
  #define LCD_BKL_TIMEOUT_MIN 1
- #define LCD_BKL_TIMEOUT_MAX 1000
+ #define LCD_BKL_TIMEOUT_MAX (60*60*18) // 18 hours max else > of uint16_t
   typedef struct {
     millis_t ms;
-    uint8_t  s;
+    uint16_t  s;
   } LCDTimeout_t;
   extern LCDTimeout_t lcd_backlight_timeout;
 #endif

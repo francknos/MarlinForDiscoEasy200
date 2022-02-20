@@ -139,7 +139,12 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
   
   void MarlinUI::updateTimeoutFromLCD()
   {
-    lcd_backlight_timeout.ms = (uint32_t)lcd_backlight_timeout.s*1000;
+    if(lcd_backlight_timeout.s == 0)
+    {
+      ui.set_lcd_backlight_timeout_s(1);
+    }else{
+      lcd_backlight_timeout.ms = (uint32_t)lcd_backlight_timeout.s*1000;
+    }
   }
 
 #endif
@@ -921,7 +926,7 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
     #endif
     
     #if ENABLED(USE_LCD_SCREENSAVER)
-      static millis_t backlight_ms = ms;//ui.lcd_backlight_timeout; //Backlight
+      static millis_t backlight_ms = ms + ui.lcd_backlight_timeout.ms; //Backlight
       #define LCD_RESET_BACKLIGHT_TIMEOUT() (backlight_ms = ms + ui.lcd_backlight_timeout.ms) //Backlight don't know why *2
     #endif
 
