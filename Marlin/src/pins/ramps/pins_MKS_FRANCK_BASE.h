@@ -39,8 +39,8 @@
 /**
  * Franck 
  * Si on défini LCD_BACKLIGHT_TIMEOUT X dans Configuration.h
- * On stoppe l'utilisation du BEEPER car la pin retroeclairage du LCD
- * est branché sur la pin du beeper.
+ * On remplace l'utilisation du BEEPER par le control duretroeclairage du LCD
+ * Modification du schéma en ajoutant un PNP pour le control du 5V sur la pin backlight du LCD.
  */
 #if LCD_BACKLIGHT_TIMEOUT_MS > 0
 #define USE_LCD_SCREENSAVER
