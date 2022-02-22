@@ -602,10 +602,10 @@
     #define DEFAULT_Ki_LIST {   6.40,   6.40 }
     #define DEFAULT_Kd_LIST {  41.25,  41.25 }
   #else
-  /* ORIGIN PID NOZZLE
-    #define DEFAULT_Kp  32.48
-    #define DEFAULT_Ki   6.40
-    #define DEFAULT_Kd  41.25
+    /* ORIGIN PID NOZZLE */
+    //#define DEFAULT_Kp  32.48
+    //#define DEFAULT_Ki   6.40
+    //#define DEFAULT_Kd  41.25
     /* END ORIGIN PID NOZZLE */
     #define DEFAULT_Kp  58.63
     #define DEFAULT_Ki  11.36
@@ -648,11 +648,11 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  /* ORIGIN PID BED
-  #define DEFAULT_bedKp 295.00
-  #define DEFAULT_bedKi 40.62
-  #define DEFAULT_bedKd 583.14
-  /* END ORIGIN PID BED*/
+  /* ORIGIN PID BED */ 
+  //#define DEFAULT_bedKp 295.00
+  //#define DEFAULT_bedKi 40.62
+  //#define DEFAULT_bedKd 583.14
+  /* END ORIGIN PID BED */ 
   #define DEFAULT_bedKp 112.32
   #define DEFAULT_bedKi 22.11
   #define DEFAULT_bedKd 380.32
@@ -1883,16 +1883,22 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_TEMP_HOTEND 185
+#define PREHEAT_1_TEMP_BED     50
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_HOTEND 230
+#define PREHEAT_2_TEMP_BED    100
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+
+#define PREHEAT_3_LABEL       "PETG"
+#define PREHEAT_3_TEMP_HOTEND 224
+#define PREHEAT_3_TEMP_BED    100
+#define PREHEAT_3_TEMP_CHAMBER 35
+#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
 
 /**
  * Nozzle Park
