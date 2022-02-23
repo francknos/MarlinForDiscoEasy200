@@ -224,7 +224,7 @@
 			"path": "Marlin/src/lcd/menu/menu_configuration.cpp",
 			"bookmarks": [
 				{
-					"line": 487,
+					"line": 491,
 					"column": 11,
 					"label": "Menu config add LCD timeout"
 				}
