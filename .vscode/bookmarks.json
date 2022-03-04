@@ -34,32 +34,47 @@
 					"label": "Motor driver"
 				},
 				{
-					"line": 1350,
+					"line": 994,
+					"column": 11,
+					"label": "JERK"
+				},
+				{
+					"line": 1353,
 					"column": 3,
 					"label": "Invert the stepper direction."
 				},
 				{
-					"line": 1580,
+					"line": 1374,
+					"column": 6,
+					"label": "NO_MOTION_BEFORE_HOMING"
+				},
+				{
+					"line": 1384,
+					"column": 15,
+					"label": "Z up before homing"
+				},
+				{
+					"line": 1583,
 					"column": 2,
 					"label": "Pre-heat before leveling"
 				},
 				{
-					"line": 1774,
+					"line": 1777,
 					"column": 2,
 					"label": "Homeing speed"
 				},
 				{
-					"line": 1884,
+					"line": 1887,
 					"column": 5,
 					"label": "PreHeat settings"
 				},
 				{
-					"line": 2177,
+					"line": 2180,
 					"column": 15,
 					"label": "Encoder reverse dir"
 				},
 				{
-					"line": 2391,
+					"line": 2394,
 					"column": 16,
 					"label": "LCD activate backlight timeout"
 				}
@@ -68,6 +83,11 @@
 		{
 			"path": "Marlin/Configuration_adv.h",
 			"bookmarks": [
+				{
+					"line": 677,
+					"column": 11,
+					"label": "ENDSTOPS_ALWAYS_ON_DEFAULT"
+				},
 				{
 					"line": 1320,
 					"column": 34,
